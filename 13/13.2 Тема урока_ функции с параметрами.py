@@ -1,9 +1,9 @@
 # Функция с параметром
 # Draw_box
 
-def draw_box(heigh, widht):
-    for i in range(heigh):
-        print(widht * "*")
+def draw_box(high, width):
+    for i in range(high):
+        print(width * "*")
 
 draw_box(3, 5)
 print()

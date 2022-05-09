@@ -11,21 +11,16 @@ from math import ceil
 
 # объявление функции
 def draw_triangle(fill, base):
-    m = ceil(base / 2)
-    for i in range(base):
-        if i < m:
-            for j in range(i + 1):
-                print(fill, end='')
-        else:
-            for k in range(m - 1):
-                print(fill, end='')
-            m -= 1
-        print()
-
+    n = base // 2
+    m = base - n
+    for i in range(n + 1):
+        print(fill * i)
+    for j in range(m, 0, -1):
+        print(fill * j)
 
 # считываем данные
-fill = input()
-base = int(input())
+fill = input('Zenklas : ')
+base = int(input('Skaicius : '))
 
 # вызываем функцию
 draw_triangle(fill, base)
